@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+
+    <title></title>
+  </head>
+
+  <body>
+    <div id="app">
+
+      <button v-on:click="increment(2, $event)" type="button" name="button">Click me</button>
+      <p>{{ counter }}</p>
+      <p v-on:mousemove="updateCoordinates">
+        Coordinates : {{ x }} / {{ y }}
+        - <span v-on:mousemove.stop>DEAD ZONE HERE</span>
+      </p>
+
+      <input type="text" name="" value="" v-on:keyup.enter="alertMe">
+
+    </div>
+  </body>
+
+  <script src="index.js" charset="utf-8"></script>
+</html>
