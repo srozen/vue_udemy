@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+
+    <title></title>
+  </head>
+
+  <body>
+    <div id="app">
+
+      <button v-on:click="counter++" type="button" name="button">Increase</button>
+      <button v-on:click="counter--" type="button" name="button">Decrease</button>
+      <button v-on:click="secondCounter--" type="button" name="button">Decrease</button>
+      <p>Counter : {{ counter }} || {{ secondCounter }}</p>
+      <p>Result : {{ result() }} || {{ output }}</p>
+    </div>
+  </body>
+
+  <script src="index.js" charset="utf-8"></script>
+</html>
