@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="vue.js" charset="utf-8"></script>
+    <title>Understanding Templates</title>
+  </head>
+
+  <body>
+
+    <div class="" id="app">
+
+      <h1 v-once>{{ title }}</h1>
+      <p>{{ sayHello() }} - <a v-bind:href="link">Google</a></p>
+      <p v-html="finishedLink"></p>
+
+    </div>
+  </body>
+
+  <script src="index.js" charset="utf-8"></script>
+</html>
