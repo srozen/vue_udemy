@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+</head>
+
+<body>
+<div id="app">
+  <p v-if="visible">Can you see me ?</p>
+  <p v-else>Do you see me ?</p>
+  <p>What about me ?</p>
+  <!--  Will be removed-->
+  <template v-if="visible">
+    <h1>Heading</h1>
+    <div class="">
+      hey hey
+    </div>
+  </template>
+  <!-- Will be hidden -->
+  <template v-show="visible">
+    <h1>Heading</h1>
+    <div class="">
+      hey hey
+    </div>
+  </template>
+  <button @click="visible = !visible">Hide</button>
+</div>
+</body>
+
+<script src="index.js" charset="utf-8"></script>
+</html>

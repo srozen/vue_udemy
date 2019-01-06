@@ -1,0 +1,23 @@
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<div id="app">
+  <ul>
+    <li v-for="(ing, i) in ingredients">{{ ing }} ({{ i+1 }})</li>
+  </ul>
+
+  <template v-for="(ing, i) in ingredients">
+    <h2>{{ ing }}</h2>
+    <p>{{ i }}</p>
+  </template>
+
+  <ul>
+    <li v-for="person in persons">
+      <div v-for="(key, val) in person">
+        {{ key }} : {{ val }}
+      </div>
+    </li>
+  </ul>
+</div>
+
+<script src="index.js" charset="utf-8"></script>
