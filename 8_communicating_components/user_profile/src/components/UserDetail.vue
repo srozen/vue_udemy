@@ -10,6 +10,7 @@
 </template>
 
 <script>
+  import { eventBus } from '../main'
   export default {
     props: {
       name: {
@@ -28,11 +29,6 @@
       },
       nameReset(){
         this.$emit('nameReset', "Max")
-      }
-    },
-    computed: {
-      thisAge(){
-        return
       }
     }
   }
