@@ -3,5 +3,9 @@
     <h3>Edit the User</h3>
     <p>Locale : {{ $route.query.locale }}</p>
     <p>Analyics : {{ $route.query.q}}</p>
+    <div style="height: 1000px">
+
+    </div>
+    <p id="data"> Some extra data </p>
   </div>
 </template>
