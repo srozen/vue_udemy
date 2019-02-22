@@ -104,7 +104,7 @@
           hobbies: this.hobbyInputs.map(hobby => hobby.value),
           terms: this.terms
         }
-        axios.post('https://vuetest-7c1c8.firebaseio.com/users.json', formData)
+        axios.post('/users.json', formData)
           .then(res => console.log(res))
           .catch(error => console.log(error))
       }
