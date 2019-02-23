@@ -99,7 +99,10 @@
     validations: {
       email: {
         required: required,
-        email: email
+        email: email,
+        unique: val => {
+          return false
+        }
       },
       age: {
         required: required,
