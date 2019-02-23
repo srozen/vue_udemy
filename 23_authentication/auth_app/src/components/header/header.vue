@@ -6,18 +6,28 @@
     <nav>
       <ul>
         <li>
-          <router-link to="/signup">Sign Up</router-link>
+          <router-link v-if="!auth" to="/signup">Sign Up</router-link>
         </li>
         <li>
-          <router-link to="/signin">Sign In</router-link>
+          <router-link v-if="!auth" to="/signin">Sign In</router-link>
         </li>
         <li>
-          <router-link to="/dashboard">Dashboard</router-link>
+          <router-link v-if="auth" to="/dashboard">Dashboard</router-link>
         </li>
       </ul>
     </nav>
   </header>
 </template>
+
+<script>
+  export default{
+    computed: {
+      auth(){
+        return this.$store.getters.isAuthenticated
+      }
+    }
+  }
+</script>
 
 <style scoped>
   #header {
