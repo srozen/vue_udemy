@@ -11,11 +11,11 @@
 
   export default {
     computed: {
-      email(){
+      email () {
         return !this.$store.getters.user ? false : this.$store.getters.user.email
       }
     },
-    created(){
+    created () {
       this.$store.dispatch('fetchUser')
     }
   }
