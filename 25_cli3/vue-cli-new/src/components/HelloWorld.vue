@@ -142,6 +142,10 @@
   }
 </script>
 
-<style>
-
+<style scoped lang="scss">
+  .foo {
+    .kek {
+      color: red
+    }
+  }
 </style>
